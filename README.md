@@ -56,7 +56,7 @@ No need to know anything about the terminal. Just copy and paste these lines:
 
 ```bash
 git clone https://github.com/Torcken/linebrew 
-cd ~/linebrew
+cd linebrew/
 bash install.sh
 ```
 

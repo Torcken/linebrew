@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.linebrew.Linebrew</id>
+
+  <name>Linebrew</name>
+  <summary>A Modener Interface for Homebrew on Linux</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <description>
+    <p>
+      Linebrew is a modern GUI for Homebrew on Linux.
+      It provides a simple GUI for managing Homebrew
+      formulae and taps without using the command line.
+    </p>
+    <p>Features include:</p>
+    <ul>
+      <li>Browse installed, outdated, all, leaf, and pinned formulae</li>
+      <li>Install, uninstall, upgrade, pin, and unpin formulae</li>
+      <li>Run brew update, cleanup, and doctor with live streaming output</li>
+      <li>Manage taps — add and remove repositories</li>
+      <li>Live search across formula names and descriptions</li>
+      <li>Desktop notifications on operation completion</li>
+      <li>Full system dark/light mode support via libadwaita</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">io.github.linebrew.Linebrew.desktop</launchable>
+
+  <url type="homepage">https://github.com/Torcken/linebrew</url>
+  <url type="bugtracker">https://github.com/Torcken/linebrew/issues</url>
+
+  <provides>
+    <binary>linebrew</binary>
+  </provides>
+
+  <requires>
+    <display_length compare="ge">800</display_length>
+    <internet>offline-only</internet>
+  </requires>
+
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </recommends>
+
+  <content_rating type="oars-1.1" />
+
+  <releases>
+    <release version="1.0.0" date="2024-01-01">
+      <description>
+        <p>Initial release of Linebrew.</p>
+      </description>
+    </release>
+  </releases>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Main window showing installed formulae</caption>
+      <image>https://raw.githubusercontent.com/Torcken/linebrew/main/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+
+  <developer id="io.github.linebrew">
+    <name>Made with Love 🤍 by Torcken</name>
+  </developer>
+</component>

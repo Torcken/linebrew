@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Build / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Installer / pip
+pip-wheel-metadata/
+*.whl
+
+# User config (runtime, not source)
+*.cfg.local
+
+# OS
+.DS_Store
+Thumbs.db

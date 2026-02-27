@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Linebrew
+GenericName=Homebrew GUI
+Comment=A modern interface for Homebrew Linux
+Exec=linebrew %u
+Icon=io.github.linebrew.Linebrew
+Terminal=false
+Categories=System;PackageManager;GTK;
+Keywords=homebrew;brew;package;manager;install;formula;tap;
+StartupWMClass=linebrew
+StartupNotify=true

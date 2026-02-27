@@ -38,7 +38,7 @@ detect_distro() {
 
 install_deps_debian() {
     info "Installing dependencies for Ubuntu/Debian…"
-    sudo apt-get update -qq
+    sudo apt-get update -qq || warn "apt-get update had errors (possibly unrelated repos). Continuing…"
     sudo apt-get install -y \
         python3 \
         python3-pip \

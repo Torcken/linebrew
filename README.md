@@ -183,6 +183,14 @@ python -m linebrew
 
 ---
 
+<a href="https://www.buymeacoffee.com/torcken" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="60" width="217">
+</a>
+
+To **support** and maintain **this** project !
+
+---
+
 ## License
 
 Linebrew is licensed under the **GNU General Public License v3.0 or later**.

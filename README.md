@@ -6,7 +6,7 @@ A modern interface for [Homebrew](https://brew.sh) on Linux.
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="60" width="217">
 </a>
 
-To **support** and maintain **this** project !
+To **support** and **maintain** this project !
 
 ![Linebrew Screenshot](data/screenshot.png)
 
@@ -52,10 +52,11 @@ To **support** and maintain **this** project !
 
 ### For Linux Newbies — One script installation.
 
-No need to know anything about the terminal. Just copy and paste these two lines:
+No need to know anything about the terminal. Just copy and paste these lines:
 
 ```bash
-cd ~/Downloads/linebrew
+git clone https://github.com/Torcken/linebrew 
+cd ~/linebrew
 bash install.sh
 ```
 
@@ -76,7 +77,14 @@ Once it's done, search for **Linebrew** in your app launcher and open it like an
 
 ### For Advanced Users 
 
-**Step 1 — Install system dependencies**
+**Step 1 — Clone the repository**
+
+```bash
+git clone https://github.com/Torcken/linebrew
+cd linebrew
+```
+
+**Step 2 — Install system dependencies**
 
 Pick your distribution:
 
@@ -94,7 +102,7 @@ sudo pacman -S python-gobject gtk4 libadwaita
 sudo zypper install python3-gobject typelib-1_0-Gtk-4_0 typelib-1_0-Adw-1
 ```
 
-**Step 2 — Install Linebrew**
+**Step 3 — Install Linebrew**
 
 Use the **system Python** (important — avoids GLib conflicts with conda/pyenv):
 
@@ -102,7 +110,7 @@ Use the **system Python** (important — avoids GLib conflicts with conda/pyenv)
 /usr/bin/python3 -m pip install --user --no-deps --break-system-packages .
 ```
 
-**Step 3 — Register the app icon and desktop entry**
+**Step 4 — Register the app icon and desktop entry**
 
 ```bash
 # Install icons at all sizes
@@ -119,7 +127,7 @@ cp data/io.github.linebrew.Linebrew.desktop ~/.local/share/applications/
 update-desktop-database ~/.local/share/applications
 ```
 
-**Step 4 — Run it**
+**Step 5 — Run it**
 
 ```bash
 linebrew
@@ -187,7 +195,7 @@ python -m linebrew
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="60" width="217">
 </a>
 
-To **support** and maintain **this** project !
+To **support** and **maintain** this project !
 
 ---
 

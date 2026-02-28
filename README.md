@@ -40,7 +40,7 @@ To **support** and **maintain** this project !
 |---|---|
 | `Ctrl+R` / `F5` | Refresh current category |
 | `Ctrl+F` | Focus search bar |
-| `Ctrl+,` | Open Preferences |
+| `Ctrl+P` | Open Preferences |
 | `Ctrl+U` | `brew update` |
 | `Ctrl+Shift+C` | `brew cleanup` |
 | `?` | Show keyboard shortcuts window |
@@ -144,37 +144,6 @@ linebrew
 * libadwaita 1.2+
 * PyGObject 3.44+
 * [Homebrew for Linux](https://docs.brew.sh/Homebrew-on-Linux)
-
----
-
-## Architecture
-
-```
-linebrew/
-├── __init__.py           Version and app-ID constants
-├── __main__.py           python -m linebrew entry point
-├── application.py        Adw.Application, CSS loading, global actions
-├── window.py             MainWindow — 3-pane layout, all operations
-├── brew_interface.py     All brew subprocess wrappers (daemon threads + GLib.idle_add)
-├── formula_list.py       Gtk.ColumnView + Gio.ListStore + filter/sort (virtualised)
-├── detail_panel.py       Right pane — formula info + action buttons
-├── progress_dialog.py    Streaming operation dialog (colour-coded terminal output)
-├── preferences_dialog.py Adw.PreferencesDialog — theme, launch options
-├── notifications.py      Desktop notification helper
-└── style.css             Application stylesheet
-```
-
-### Threading Model
-
-All `brew` subprocess calls run in **daemon threads**.  Output lines and
-completion signals are dispatched back to the GTK main thread exclusively via
-`GLib.idle_add()`.  The UI never blocks or freezes during brew operations.
-
-### Caching
-
-Formula lists are cached per-category in a dictionary.  The cache is
-invalidated automatically after any mutating operation (install, uninstall,
-upgrade, pin, tap, etc.) to ensure the lists stay consistent.
 
 ---
 

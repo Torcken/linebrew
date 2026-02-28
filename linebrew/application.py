@@ -109,11 +109,11 @@ class LinebrewApp(Adw.Application):
 
     def _register_actions(self) -> None:
         """Register app-level Gio.SimpleAction entries."""
-        # Preferences  (Ctrl+,)
+        # Preferences  (Ctrl+P)
         prefs_action = Gio.SimpleAction.new("preferences", None)
         prefs_action.connect("activate", self._on_preferences)
         self.add_action(prefs_action)
-        self.set_accels_for_action("app.preferences", ["<Control>comma"])
+        self.set_accels_for_action("app.preferences", ["<Control>p"])
 
         # Keyboard shortcuts  (?)
         shortcuts_action = Gio.SimpleAction.new("shortcuts", None)
@@ -166,7 +166,7 @@ class LinebrewApp(Adw.Application):
             <child>
               <object class="GtkShortcutsShortcut">
                 <property name="title">Preferences</property>
-                <property name="accelerator">&lt;Control&gt;comma</property>
+                <property name="accelerator">&lt;Control&gt;p</property>
               </object>
             </child>
             <child>

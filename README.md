@@ -1,6 +1,16 @@
-# Linebrew
 
-A modern interface for [Homebrew](https://brew.sh) on Linux.
+
+<p align="center">
+  <img src="data/icons/hicolor/128x128/apps/io.github.linebrew.Linebrew.png" width="128">
+</p>
+
+<h1 align="center">Linebrew</h1>
+
+<p align="center">
+A Modern GNOME Interface for Homebrew packages
+</p>
+
+
 
 <a href="https://www.buymeacoffee.com/torcken" target="_blank">
   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height="60" width="217">
